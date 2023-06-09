@@ -1,6 +1,6 @@
 <#
 .Synopsis
-A quick PowerShell script for the backup of an entire directory, to another directory
+A quick PowerShell script for the backup of an entire directory, to another directory while stopping associated services
 
 .Notes
 Author: Balthier Lionheart

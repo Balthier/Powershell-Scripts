@@ -5,7 +5,7 @@ Re-Generates the README.md file with the latest information from all scripts
 
 $Dir = $PSScriptRoot
 $ReadMeLoc = "..\README.md"
-$Folders = Get-ChildItem "$Dir\.." -Directory | Where-Object Fullname -NotLike "*Shared*"
+$Folders = Get-ChildItem "$Dir\.." -Directory | Where-Object { $_.Fullname -NotLike "*Shared*" -and $_.Fullname -NotLike "*To Be Sorted*" }
 $NewContent = @()
 
 [collections.arraylist]$ReadMeContent = (Get-Content $ReadMeLoc).split("`n")

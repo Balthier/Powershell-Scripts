@@ -20,6 +20,9 @@ Processes a new Starter by creating an AD/O365 account, assigning a license, and
 [AWS\New-AWSInstance.ps1](AWS\New-AWSInstance.ps1)  
 Launches a new AWS Instance **Incomplete**
 
+[AWS\Update-AWSAccess.ps1](AWS\Update-AWSAccess.ps1)  
+Automatically updates the specified IP of the security group in AWS
+
 
 ### Desktop
 [Desktop\Get-PCInfo.ps1](Desktop\Get-PCInfo.ps1)  
@@ -28,8 +31,16 @@ Collects various information from the PC, and outputs to a CSV file.
 [Desktop\Move-Redirects.ps1](Desktop\Move-Redirects.ps1)  
 This script will redirect "My Documents", "AppData", and "Desktop" to $FR\USERNAME\FOLDER
 
+[Desktop\Remove-TV.ps1](Desktop\Remove-TV.ps1)  
+Removes the stored permanent password for Teamviewer 10
+
 [Desktop\Start-Minimized.ps1](Desktop\Start-Minimized.ps1)  
 A quick PowerShell script for starting program in a minimized state.
+
+
+### DNS
+[DNS\Check-DNS.ps1](DNS\Check-DNS.ps1)  
+Checks Google's DNS for the specified DNS name and waits until it appears
 
 
 ### Exchange
@@ -43,17 +54,41 @@ Creates a new Mailbox on a specific DB based on department
 A quick PowerShell script for starting program in a minimized state.
 
 
+### Folder Management
+[Folder Management\Archive-Folder.ps1](Folder%20Management\Archive-Folder.ps1)  
+(Re)Moves all files/folders in the subdirectories of a given folder.
+
+[Folder Management\Archive-FolderEnhanced.ps1](Folder%20Management\Archive-FolderEnhanced.ps1)  
+A quick PowerShell script for the backup of an entire directory, to another directory while stopping associated services
+
+[Folder Management\Archive-WoTReplays.ps1](Folder%20Management\Archive-WoTReplays.ps1)  
+Archives all World of Tank replays in to an Archive folder, except the most recent month
+
+[Folder Management\Compare-FileLoss.ps1](Folder%20Management\Compare-FileLoss.ps1)  
+Keeps a record of all filenames in the Paths, and detects if any have disappeared since the day before
+
+[Folder Management\Convert-CSV.ps1](Folder%20Management\Convert-CSV.ps1)  
+Converts a CSV file into XLS
+
+[Folder Management\Move-CameraFiles.ps1](Folder%20Management\Move-CameraFiles.ps1)  
+Organizes the Camera files in to Folders by date
+
+[Folder Management\Set-Permissions.ps1](Folder%20Management\Set-Permissions.ps1)  
+Removes Non-Inherited access, and grants full control/owner rights
+
+
 ### Hyper-V
 [Hyper-V\Optimize-VHD.ps1](Hyper-V\Optimize-VHD.ps1)  
 Mounts and Optimises VHD disks in Hyper-V to reduce disk size
 
 
-### Server
-[Server\Archive-Folder.ps1](Server\Archive-Folder.ps1)  
-A quick PowerShell script for the backup of an entire directory, to another directory
-
-
 ### Set-ReadMe
 [Set-ReadMe\Set-ReadMe.ps1](Set-ReadMe\Set-ReadMe.ps1)  
 Re-Generates the README.md file with the latest information from all scripts
+
+
+### TeamViewer
+[TeamViewer\Connect-Teamviewer.ps1](TeamViewer\Connect-Teamviewer.ps1)  
+Connect-Teamviewer.ps1 
+
 
