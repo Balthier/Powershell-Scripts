@@ -45,8 +45,9 @@ ForEach ($Folder in $Folders) {
 
             Clear-Variable -Name Count
             $Path = ($Tree -join "\").replace("Powershell-Scripts\", "")
+            $LinkPath = ($Tree -join "/").replace("Powershell-Scripts\", "")
             $Name = "[" + ($Path -Replace "Powershell\\", "") + "]"
-            $Link = "(" + ($Path -Replace " ", "%20") + ")  "
+            $Link = "(" + ($LinkPath -Replace " ", "%20") + ")  "
             $Hyperlink = $Name + $Link
 
             $NewContent += $Hyperlink
